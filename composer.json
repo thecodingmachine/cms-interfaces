@@ -1,0 +1,32 @@
+{
+    "name": "thecodingmachine/cms-interfaces",
+    "description": "A set of interfaces for various components of a CMS.",
+    "type": "library",
+    "license": "MIT",
+    "config": {
+        "sort-packages": true
+    },
+    "require": {
+        "php": ">=7.1",
+        "psr/http-message": "^1"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^2.8.1",
+        "thecodingmachine/phpstan-strict-rules": "^0.7.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "TheCodingMachine\\CMS\\": "src/"
+        }
+    },
+    "scripts": {
+        "phpstan": "phpstan analyse src/ --level 4"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    },
+    "prefer-stable": true,
+    "minimum-stability": "dev"
+}
