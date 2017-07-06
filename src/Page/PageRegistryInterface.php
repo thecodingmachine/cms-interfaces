@@ -8,5 +8,5 @@ use Psr\Http\Message\UriInterface;
 
 interface PageRegistryInterface
 {
-    public function getPage(UriInterface $uri): PageInterface;
+    public function getPage(UriInterface $uri): ?PageInterface;
 }
