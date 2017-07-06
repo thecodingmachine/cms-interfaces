@@ -4,6 +4,7 @@
 namespace TheCodingMachine\CMS\Page;
 
 use Psr\Http\Message\StreamInterface;
+use TheCodingMachine\CMS\Block\BlockInterface;
 
 interface PageRendererInterface
 {
@@ -14,8 +15,8 @@ interface PageRendererInterface
      *
      * TODO: what about writing in blocks instead?
      *
-     * @param PageInterface $page
+     * @param BlockInterface $page
      * @return StreamInterface[] A list of streams indexed by zone name
      */
-    public function render(PageInterface $page): array;
+    public function render(BlockInterface $page): array;
 }

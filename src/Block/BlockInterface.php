@@ -1,12 +1,12 @@
 <?php
 
 
-namespace TheCodingMachine\CMS\Page;
+namespace TheCodingMachine\CMS\Block;
 
 
 use TheCodingMachine\CMS\Theme\ThemeDescriptorInterface;
 
-interface PageInterface
+interface BlockInterface
 {
     public function getThemeDescriptor(): ThemeDescriptorInterface;
 
