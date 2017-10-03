@@ -4,10 +4,10 @@
 namespace TheCodingMachine\CMS\Page;
 
 
-use Psr\Http\Message\UriInterface;
+use Psr\Http\Message\ServerRequestInterface;
 use TheCodingMachine\CMS\Block\BlockInterface;
 
 interface PageRegistryInterface
 {
-    public function getPage(UriInterface $uri): ?BlockInterface;
+    public function getPage(ServerRequestInterface $request): ?BlockInterface;
 }

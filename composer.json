@@ -19,9 +19,6 @@
             "TheCodingMachine\\CMS\\": "src/"
         }
     },
-    "scripts": {
-        "phpstan": "phpstan analyse src/ --level 4"
-    },
     "extra": {
         "branch-alias": {
             "dev-master": "1.0-dev"
